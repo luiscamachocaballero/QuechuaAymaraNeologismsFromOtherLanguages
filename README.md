@@ -13,7 +13,7 @@ When your code is running in a local development environment, the best option is
 
     gcloud auth application-default login
 
-A login screen is displayed. After you log in, your credentials are stored in the local credential file used by ADC. You should be then be allowed to automatically determine credentials.
+A login screen is displayed. After you log in, your credentials are stored in the local credential file used by [ADC](https://cloud.google.com/docs/authentication/application-default-credentials). You should be then be allowed to automatically determine credentials.
 
 
 Then test this going into the terminal and type:
