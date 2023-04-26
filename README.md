@@ -75,7 +75,39 @@ INSTANCE_NAME are assigned when you create the virtual machine
 
 4. gcloud compute scp LOCAL_FILE INSTANCE_NAME:~/ , use this to move LOCAL_FILE from your desktop to home folder in your virtual machine
 
-5. 
+5. Environment setup
+
+Before you can begin using the Translation API, run the following command in Cloud Shell to enable the API:
+
+gcloud services enable translate.googleapis.com
+
+You should see something like this:
+
+Operation "operations/..." finished successfully.
+
+Now, you can use the Translation API!
+
+Set the following environment variable (to be used in your application):
+
+export PROJECT_ID=$(gcloud config get-value core/project)
+
+echo "→ PROJECT_ID: $PROJECT_ID"
+
+Note: This environment variable only applies to your current shell session. Therefore, if you open a new session, set this variable again.
+
+Navigate to your home directory:
+
+cd ~
+
+Create a Python virtual environment to isolate the dependencies:
+
+virtualenv venv-translate
+
+Activate the virtual environment:
+
+source venv-translate/bin/activate
+
+
 
 
 
