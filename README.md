@@ -120,3 +120,23 @@ gcloud compute scp /LOCAL/DIRECTORY/Translate.py INSTANCE_NAME:~/
 
 Reversely, to get files from the VM to your laptop, run
 gcloud compute scp INSTANCE_NAME:~/FILES /LOCAL/DIRECTORY/
+
+
+If you ssh into a GCP VM instance, start the python script and walk away, it won't continue to run when your computer goes to sleep. 
+if your computer goes to sleep and your ssh session closes, your script will stop.
+
+Since running the script should take about 8 hours or so to run on a GCP VM instance with 4CPUs, to prevent interruption, you can use & and then disown to push your script to the background and remove the process from the shell's job control, but it still leaves it connected to the terminal. Execute:
+
+
+./Translate.py  &
+
+you will obtain the JobID, because it will start running in background:
+
+[1] JobID
+
+with this JobID, run the disown command to remove the process from the shell's job control:
+
+disown JobID
+
+At this point, you can close your ssh session and the script will continue working.
+
