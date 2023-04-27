@@ -114,6 +114,8 @@ Now, you're ready to use the Translation API client library!
 
 Note: If you're setting up your own Python development environment outside of Cloud Shell, you can follow these [guidelines](https://cloud.google.com/python/setup).
 
+Transfer the python script and the english vocabulary to the VM 
+gcloud compute scp /LOCAL/DIRECTORY/Translate.py INSTANCE_NAME:~/
 
-
-
+Reversely, to get files from the VM to your laptop, run
+gcloud compute scp INSTANCE_NAME:~/FILES /LOCAL/DIRECTORY/
