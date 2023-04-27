@@ -35,10 +35,7 @@ Creating a Google VM is explained [here](https://cloud.google.com/appengine)
 Connect to your VM by your local console:
 
 1. gcloud auth login
-Your browser has been opened to visit:
-
-    https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=G57vENcTm43WTJgPmod9CASR8be9lj&access_type=offline&code_challenge=YTQx4suzB6RMHjsI78nIys2RnTHW7ahIcpFULFjPbbs&code_challenge_method=S256
-
+Your browser will be opened to sign in to continue to Google Cloud SDK
 
 You are now logged in as [GOOGLE_USER].
 Your current project is [None].  You can change this setting by running:
