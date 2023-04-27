@@ -107,6 +107,15 @@ Activate the virtual environment:
 
 source venv-translate/bin/activate
 
+Note: To stop using the virtual environment and go back to your system Python version, you can use the deactivate command.
+
+Install IPython and the Translation API client library:
+
+pip install google-cloud-translate
+
+Now, you're ready to use the Translation API client library!
+
+Note: If you're setting up your own Python development environment outside of Cloud Shell, you can follow these [guidelines](https://cloud.google.com/python/setup).
 
 
 
